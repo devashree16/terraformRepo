@@ -1,0 +1,41 @@
+terraform lifecycle
+terraform core concepts 
+github to s3 bucket
+s3 lifecycle policy - s3 glacier
+
+
+______________________________________
+
+
+resource "aws_s3_bucket_versioning" "versioning_bucket" {
+#   bucket = aws_s3_bucket.example.id
+#   versioning_configuration {
+#     status = "Enabled"
+#   }
+# }
+#
+# resource "aws_s3_bucket_lifecycle_configuration" "versioning-bucket-config" {
+#
+#   bucket = aws_s3_bucket_versioning.versioning_bucket.id
+#    rule {
+#     id = "versioning_lifecycle_policy_terraform"
+#
+#     noncurrent_version_expiration {
+#       noncurrent_days = 90
+#     }
+#
+#     noncurrent_version_transition {
+#       noncurrent_days = 30
+#       storage_class   = "STANDARD_IA"
+#       newer_noncurrent_versions = 3
+#     }
+#
+#     noncurrent_version_transition {
+#       noncurrent_days = 60
+#       storage_class   = "GLACIER"
+#       newer_noncurrent_versions = 3
+#     }
+#
+#     status = "Enabled"
+#   }
+# }
